@@ -1,7 +1,7 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0; /* Ajusta el padding a 0 para eliminar el espacio adicional */
   text-align: center;
 }
 
@@ -34,9 +34,98 @@
 }
 
 .card {
-  padding: 2em;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin: 10px; /* Ajusta el margen entre las tarjetas */
 }
 
-.read-the-docs {
-  color: #888;
+.card:hover {
+  transform: scale(1.05);
 }
+
+.card-image {
+  width: 100%;
+  height: 200px; /* Altura de la imagen */
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 16px;
+  color: #666;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra las tarjetas horizontalmente */
+}
+
+.section-title {
+  margin-top: 20px; /* Espacio superior */
+  border-top: 1px solid #ccc; /* Línea divisora */
+  padding-top: 10px; /* Espaciado superior de la línea divisora */
+}
+
+.projects-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.projects-header h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.projects-header hr {
+  width: 50%;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.comment-form {
+  margin-top: 20px;
+}
+
+.comment-form h3 {
+  margin-bottom: 10px;
+}
+
+.comment-form input[type="text"],
+.comment-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.comment-form textarea {
+  height: 100px;
+}
+
+.comment-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.comment-form button:hover {
+  background-color: #0056b3;
